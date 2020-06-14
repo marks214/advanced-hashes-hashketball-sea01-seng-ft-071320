@@ -253,6 +253,5 @@ away.each do |aoh|
     number_of_rebounds = aoh[:rebounds]
   end
 end
- puts shoe_size
- puts number_of_rebounds
+ return number_of_rebounds
 end
