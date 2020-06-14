@@ -193,17 +193,13 @@ def player_numbers(team_name)
 
   if team_name == game_hash[:home][:team_name]
     home.each do |aoh|
-      aoh.each do |key, value|
          array_of_numbers.push(aoh[:number])
-      end
     end
   end
 
   if team_name == game_hash[:away][:team_name]
     away.each do |aoh|
-      aoh.each do |key, value|
          array_of_numbers.push(aoh[:number])
-      end
     end
   end
 
