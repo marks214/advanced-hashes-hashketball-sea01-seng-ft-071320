@@ -137,6 +137,8 @@ def num_points_scored(name)
     puts "key: #{key}"
     puts "value: #{value}"
     if value == name
+      
+      puts "points: #{array[:points]}"
 
     end
   end
