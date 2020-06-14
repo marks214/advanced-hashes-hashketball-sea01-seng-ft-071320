@@ -193,24 +193,40 @@ def player_numbers(team_name)
 
   if team_name == game_hash[:home][:team_name]
     home.each do |aoh|
-         array_of_numbers.push(aoh[:number])
+       array_of_numbers.push(aoh[:number])
     end
   end
 
   if team_name == game_hash[:away][:team_name]
     away.each do |aoh|
-         array_of_numbers.push(aoh[:number])
+        array_of_numbers.push(aoh[:number])
     end
   end
 
   return array_of_numbers
-#akes in an argument of a team name and returns an
-#Array of the jersey numbers for that team
 end
 
 def player_stats(name)
 #takes in an argument of a player's name and returns
 #a hash of that player's stats
+home = game_hash[:home][:players]
+away = game_hash[:away][:players]
+
+home.each do |aoh|
+  aoh.each do |key, value|
+    if value.to_s == name.to_s
+      return aoh
+    end
+end
+end
+
+away.each do |aoh|
+  aoh.each do |key, value|
+    if value.to_s == name.to_s
+      return aoh
+    end
+  end
+end
 end
 
 def big_shoe_rebounds
