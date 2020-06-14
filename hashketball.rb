@@ -235,4 +235,20 @@ def big_shoe_rebounds
 #   First, find the player with the largest shoe size
 #   Then, return that player's number of rebounds
 #   Remember to think about return values here.
+
+home = game_hash[:home][:players]
+away = game_hash[:away][:players]
+shoe_size = -1
+home.each do |aoh|
+  if aoh[:shoe] > shoe_size
+    shoe_size = aoh[:shoe]
+  end
+end
+
+away.each do |aoh|
+  if aoh[:shoe] > shoe_size
+    shoe_size = aoh[:shoe]
+  end
+end
+ puts shoe_size
 end
