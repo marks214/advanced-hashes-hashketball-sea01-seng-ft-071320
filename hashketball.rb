@@ -140,6 +140,7 @@ def num_points_scored(name)
       puts key
     end
   end
+end
 
   away.each do |key, value|
     if value == name
