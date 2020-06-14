@@ -141,11 +141,31 @@ end
 
   away.each do |aoh|
     aoh.each do |key, value|
-    if value.to_s == name.to_s
-      return aoh[:points]
+      if value.to_s == name.to_s
+        return aoh[:points]
+      end
     end
   end
+  
+end
+
+def shoe_size(name)
+  home = game_hash[:home][:players]
+  away = game_hash[:away][:players]
+
+  home.each do |aoh|
+    aoh.each do |key, value|
+      if value.to_s == name.to_s
+        return aoh[:shoe]
+      end
   end
+end
 
-
+  away.each do |aoh|
+    aoh.each do |key, value|
+      if value.to_s == name.to_s
+        return aoh[:shoe]
+      end
+    end
+  end
 end
