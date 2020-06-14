@@ -184,10 +184,30 @@ end
 def team_names
   array = [game_hash[:home][:team_name], game_hash[:away][:team_name]]
   return array
-#operates on the game Hash to return an Array of the team names.
 end
 
 def player_numbers(team_name)
+  home = game_hash[:home][:players]
+  away = game_hash[:away][:players]
+  array_of_numbers = []
+
+  if team_name == game_hash[:home][:team_name]
+    home.each do |aoh|
+      aoh.each do |key, value|
+         array_of_numbers.push(aoh[:number])
+      end
+    end
+  end
+
+  if team_name == game_hash[:away][:team_name]
+    away.each do |aoh|
+      aoh.each do |key, value|
+         array_of_numbers.push(aoh[:number])
+      end
+    end
+  end
+
+  return array_of_numbers
 #akes in an argument of a team name and returns an
 #Array of the jersey numbers for that team
 end
