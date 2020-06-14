@@ -133,6 +133,7 @@ def num_points_scored(name)
   puts home
   puts away
   home.each do |key, value|
+    value.each do |key, value|
     if value == name
       puts key
     end
