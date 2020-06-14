@@ -181,7 +181,7 @@ def team_colors(team_name)
   end
 end
 
-def team_names(team_name)
+def team_names
   array = [game_hash[:home][:team_name], game_hash[:away][:team_name]]
   puts array
 #operates on the game Hash to return an Array of the team names.
