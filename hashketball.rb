@@ -130,5 +130,7 @@ end
 def num_points_scored(name)
   home = game_hash[:home][:players]
   away = game_hash[:away][:players]
+  puts home
+  puts away
 
 end
