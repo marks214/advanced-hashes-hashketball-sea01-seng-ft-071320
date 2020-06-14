@@ -134,7 +134,7 @@ def num_points_scored(name)
   puts away
   home.each do |key, value|
     if value == name
-      puts value
+      puts key
     end
   end
 
