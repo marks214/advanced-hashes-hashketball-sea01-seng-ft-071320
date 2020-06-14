@@ -145,10 +145,12 @@ def num_points_scored(name)
   end
 end
 
-  away.each do |key, value|
-    if value == name
+  away.each do |aoh|
+    aoh.each do |key, value|
+    if value.to_s == name.to_s
       puts value
     end
+  end
   end
 
 
