@@ -169,3 +169,34 @@ end
     end
   end
 end
+
+def team_colors(team_name)
+  home = game_hash[:home][:players]
+  away = game_hash[:away][:players]
+
+
+#that takes in an argument of the team name and
+#returns an Array of that team's colors
+end
+
+def team_names(team_name)
+#operates on the game Hash to return an Array of the team names.
+end
+
+def player_numbers(team_name)
+#akes in an argument of a team name and returns an
+#Array of the jersey numbers for that team
+end
+
+def player_stats(name)
+#takes in an argument of a player's name and returns
+#a hash of that player's stats
+end
+
+def big_shoe_rebounds
+#return the number of rebounds associated with the player
+#that has the largest shoe size. Break this one down into steps:
+#   First, find the player with the largest shoe size
+#   Then, return that player's number of rebounds
+#   Remember to think about return values here.
+end
