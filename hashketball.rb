@@ -136,7 +136,7 @@ def num_points_scored(name)
     array.each do |key, value|
     puts "key: #{key}"
     puts "value: #{value}"
-    if value == name
+    if value[:player_name] == name
 
       puts "points: #{key[:points]}"
 
