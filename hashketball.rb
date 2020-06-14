@@ -133,9 +133,10 @@ def num_points_scored(name)
   puts home
   puts away
   home.each do |array|
-    array.each do |key, value|
+    aoh.each do |key, value|
     puts "key: #{key}"
     puts "value: #{value}"
+    puts "name: #{name}"
     if value.to_s == name.to_s
 
       puts "points:" #{}" #{#{}}#{key[:points]}"
