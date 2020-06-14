@@ -179,11 +179,11 @@ def team_colors(team_name)
   if team_name.to_s == game_hash[:away][:team_name]
     return game_hash[:away][:colors]
   end
-#that takes in an argument of the team name and
-#returns an Array of that team's colors
 end
 
 def team_names(team_name)
+  array = [game_hash[:home][team_name], game_hash[:away][team_name]]
+  puts array
 #operates on the game Hash to return an Array of the team names.
 end
 
