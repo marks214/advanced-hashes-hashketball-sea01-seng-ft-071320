@@ -132,7 +132,7 @@ def num_points_scored(name)
   away = game_hash[:away][:players]
   puts home
   puts away
-  home.each do |array|
+  home.each do |aoh|
     aoh.each do |key, value|
     puts "key: #{key}"
     puts "value: #{value}"
