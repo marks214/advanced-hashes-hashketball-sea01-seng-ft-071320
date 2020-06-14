@@ -134,7 +134,7 @@ def num_points_scored(name)
   puts away
   home.each do |array|
     array.each do |key, value|
-    puts "keyk: #{key}"
+    puts "key: #{key}"
     puts "value: #{value}"
     if value == name
 
