@@ -132,5 +132,17 @@ def num_points_scored(name)
   away = game_hash[:away][:players]
   puts home
   puts away
+  home.each do |key, value|
+    if value == name
+      puts value
+    end
+  end
+
+  away.each do |key, value|
+    if value == name
+      puts value
+    end
+  end
+
 
 end
