@@ -130,24 +130,19 @@ end
 def num_points_scored(name)
   home = game_hash[:home][:players]
   away = game_hash[:away][:players]
+
   home.each do |aoh|
     aoh.each do |key, value|
-    puts "key: #{key}"
-    puts "value: #{value}"
-    puts "name: #{name}"
-    if value.to_s == name.to_s
-
-      puts "points:" #{}" #{#{}}#{key[:points]}"
-
-    end
+      if value.to_s == name.to_s
+        return aoh[:points]
+      end
   end
 end
 
   away.each do |aoh|
     aoh.each do |key, value|
     if value.to_s == name.to_s
-      puts value
-      puts "points: #{aoh[:points]}"
+      return aoh[:points]
     end
   end
   end
