@@ -128,6 +128,6 @@ end
 
 # Write code here
 def num_points_scored(name)
-  puts game_hash[:home]
+  puts game_hash[:home][:players]
 
 end
