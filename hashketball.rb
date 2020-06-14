@@ -147,7 +147,7 @@ end
     aoh.each do |key, value|
     if value.to_s == name.to_s
       puts value
-      puts "points: #{value[:points]}"
+      puts "points: #{aoh[:points]}"
     end
   end
   end
