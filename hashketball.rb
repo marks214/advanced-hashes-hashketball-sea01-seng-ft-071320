@@ -171,8 +171,10 @@ end
 end
 
 def team_colors(team_name)
-  home = game_hash[:home][:players]
-  away = game_hash[:away][:players]
+  home = game_hash[:home][:colors]
+  away = game_hash[:away][:colors]
+  puts home
+  puts away
 
 
 #that takes in an argument of the team name and
